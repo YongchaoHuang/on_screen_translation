@@ -16,4 +16,9 @@ sudo apt install tesseract-ocr libtesseract-dev
 
 3. create a (free) account on deepl.com, and obtain a Deepl API key. Then replace ```DEEPL_KEY = "YOUR_DEEPL_API_KEY"``` with your key.
 
-4. Run the Python script, e.g. ```python3 selection_translator.py```
+4. in ```selection_translator.py```, set source language and target language, e.g.
+```
+source_lang = "EN"
+target_lang = "ZH"
+```
+6. run the Python script, e.g. ```python3 selection_translator.py```
