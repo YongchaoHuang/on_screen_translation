@@ -6,7 +6,7 @@ sudo apt install tesseract-ocr libtesseract-dev
 ```
 
 2. Download OCR models to your local machine via bash:
-   ```
+```
   mkdir -p ~/.EasyOCR/model
   wget https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/craft_mlt_25k.zip -P ~/.EasyOCR/model
   unzip ~/.EasyOCR/model/craft_mlt_25k.zip -d ~/.EasyOCR/model
