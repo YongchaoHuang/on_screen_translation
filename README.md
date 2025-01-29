@@ -14,7 +14,7 @@ sudo apt install tesseract-ocr libtesseract-dev
   unzip ~/.EasyOCR/model/english_g2.zip -d ~/.EasyOCR/model
 ```
 
-3. create a (free) account on deepl.com, and obtain a Deepl API key. Then replace ```DEEPL_KEY = "YOUR_DEEPL_API_KEY"``` with your key.
+3. create a (free) account on deepl.com, and obtain a deepl API key. Then in ```selection_translator.py```, replace ```DEEPL_KEY = "YOUR_DEEPL_API_KEY"``` with your key.
 
 4. in ```selection_translator.py```, set source language and target language, e.g.
 ```
