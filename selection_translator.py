@@ -17,6 +17,8 @@ import easyocr
 import os
 
 # Configuration
+source_lang = "EN"
+target_lang = "ZH"
 
 DEEPL_API = "https://api-free.deepl.com/v2/translate" # use DEEPL_API = "https://api.deepl.com/v2/translate" if you are using a paid Deepl.com account
 DEEPL_KEY = "YOUR_DEEPL_API_KEY"  # Replace with your key
@@ -65,8 +67,8 @@ def process_translation(content):
             data={
                 "auth_key": DEEPL_KEY,
                 "text": content,
-                "source_lang": "EN",
-                "target_lang": "ZH",
+                "source_lang": source_lang,
+                "target_lang": target_lang,
                 "preserve_formatting": "1",
                 "tag_handling": "xml"
             },
